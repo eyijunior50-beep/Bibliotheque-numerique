@@ -1,0 +1,211 @@
+/* Css zone de filtres de recherche*/
+
+#zone_filtre {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 1rem;
+}
+
+.paragraph {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: gray;
+    padding-left: 10px;
+}
+
+#bar_search {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    /* background-color: #f9f8f6; */
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
+    width: 100%;
+    max-width: 1200px;
+    height: 2.5rem;
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#cont_select {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 12px;
+}
+
+.select {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    /* background-color: #f9f8f6; */
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
+    width: 100%;
+    max-width: 1200px;
+    height: 2.5rem;
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+/*Css section des livres*/
+
+#liste_livre {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.cont_img_livres {
+    height: 270px;
+    overflow: hidden;
+    /* pour que l'image ne depasse pas la div quand elle grossi*/
+}
+
+.img_livres {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_livres:hover {
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
+}
+
+
+.item_livre {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
+}
+
+.item_livre:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+.haut_item {
+    height: 90px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.type_livre {
+    text-decoration: none;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.cont_type_livre {
+    display: inline-flex;
+    border-radius: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+    background-color: #ebb447;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.type_livre:hover {
+    box-shadow: #efc36c 0px 7px 29px 0px;
+}
+
+.nom_livre {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nom_livre h3 {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.nom_livre h3:hover {
+    color: #ebb447;
+}
+
+.prix {
+    margin-left: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.bas_item {
+    height: 90px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+.info_livre {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    #zone_filtre {
+        /* margin-top: 30px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 6px;
+        /* padding: 0 1rem; */
+    }
+
+    #cont_select {
+        /* width: 100%; */
+        /* margin: auto; */
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .item_livre {
+        height: auto;
+    }
+}

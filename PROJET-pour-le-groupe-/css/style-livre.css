@@ -1,0 +1,172 @@
+/*.type_livre {}
+
+.similarList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.haut_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+*/
+
+/* CSS section info livre*/
+
+main {
+    width: 170vh;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    background-color: white;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 600px 330px;
+    gap: 22px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    margin-bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* .section_info_livre {} */
+
+.sous_section_1 {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cont_image_livre {
+    width: 36%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.img_livre {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.info_livre {
+    width: 46%;
+    margin-left: 20px;
+}
+
+.description {
+    width: 85%;
+    margin-left: 40px;
+    max-height: 100px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.bouton {
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: rgb(10, 148, 10);
+    border-radius: 2px;
+    border-color: rgb(10, 148, 10);
+    color: aliceblue;
+}
+
+.bouton:hover {
+
+    transform: scale(1.04);
+    background-color: rgb(69, 224, 69);
+    border-color: rgb(69, 224, 69);
+    color: white;
+}
+
+
+
+.titre {
+    max-height: 50px;
+}
+
+.auteur {
+    max-height: 50px;
+}
+
+h4,
+h5 {
+    color: gray;
+}
+
+.prix {
+    background-color: hsl(40, 80%, 60%);
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.prix:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+/* Fin du CSS de la section info livre*/
+
+/* Debut du CSS de la section livre similaire*/
+
+.scroll_autre_livre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    direction: rtl;
+    height: 380px;
+}
+
+.livre_propose {
+    height: 175px;
+    border: 3px;
+    overflow: hidden;
+}
+
+.img_livre_propose {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img_livre {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.content:target {
+    opacity: 1;
+    visibility: visible;
+}

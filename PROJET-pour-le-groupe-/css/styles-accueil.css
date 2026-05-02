@@ -1,0 +1,354 @@
+/* SUB-HEADER ACCUEIL : DEBUT */
+.sub_header_index {
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+    unicode-bidi: isolate;
+
+}
+
+.sub_header_background {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.sub_header_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5); /*luminosité background*/
+    max-width: 100%;
+}
+
+.sub_header_background div {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, 0.6));
+}
+
+.sub_header_container {
+    color: #f7f4ee;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1400px;
+
+}
+
+.sub_header_container h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    max-width: 48rem;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    animation: fade-in .5s ease-out;
+}
+
+.sub_header_container p {
+    color: hsla(40, 35%, 95%, .9);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    max-width: 42rem;
+    margin-bottom: 2rem;
+    animation: fade-in .5s ease-out .25s backwards;
+}
+
+.sub_header_container div {
+    animation-delay: .4s;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fade-in .5s ease-out;
+    display: flex;
+}
+
+.sub_header_button_catalogue {
+    /* transition: background-color 0.3s ease; */
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .3);
+    color: hsl(220, 40%, 15%);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: #f7f4ee;
+    border-radius: .55rem;
+    white-space: nowrap;
+
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    display: inline-flex;
+}
+
+.sub_header_button_catalogue:hover {
+    background-color: hsl(40, 80%, 60%);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .2);
+    color: hsl(220, 40%, 15%);
+}
+
+.sub_header_button_apropos {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(220, 70%, 25%, .3);
+    color: #f7f4ee;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: hsla(40, 35%, 95%, .1);
+    outline: 2px solid #f7f4ee;
+    outline-offset: -2px;
+    border-radius: .55rem;
+    white-space: nowrap;
+
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    display: inline-flex;
+
+    backdrop-filter: blur(4px);
+}
+
+.sub_header_button_apropos:hover {
+    background-color: #f7f4ee;
+    color: hsl(220, 40%, 15%);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .2);
+}
+
+.avantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 5%;
+    background-color: #f8f4e8ea;
+}
+
+.avantage {
+    background: white;
+    /* background-color: #f8f4e8ea; */
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.avantage:hover {
+    transform: translateY(-6px);
+}
+
+
+/* SUB-HEADER ACCUEIL : FIN */
+
+nav.menu a {
+    color: #ffffff;
+    margin: 0 14px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu a:hover {
+    color: #e8491d;
+    transition: color 0.3s ease;
+    animation: alternate Color 0.5s infinite;
+}
+
+main {
+    background-color: #ffffff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: grid;
+    grid-area: auto;
+    /* padding-left: 22px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#forme_image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#liste_livre {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.category {
+    margin: auto;
+    width: 80%;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.category li {
+    background-color: #f2f2f2;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.cont_img_livres {
+    height: 350px;
+    overflow: hidden;
+
+    /* pour que l'image ne depasse pas la div quand elle grossi*/
+}
+
+.img_livres {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_livres:hover {
+
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
+}
+
+
+.item_livre {
+
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
+
+}
+
+.item_livre:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+.haut_item {
+    height: 90px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.type_livre {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+
+.cont_type_livre {
+    display: inline-block;
+    border-radius: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ebb447;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.type_livre:hover {
+
+    box-shadow: #efc36c 0px 7px 29px 0px;
+}
+
+.nom_livre {
+    text-decoration: none;
+    color: black;
+}
+
+.prix {
+    margin-left: 10px;
+}
+
+
+.bas_item {
+    height: 90px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+.info_livre {
+
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #cont_select {
+        flex-direction: column;
+    }
+
+    .item_livre {
+        height: auto;
+    }
+}
+
+.ul {
+    list-style-position: inside;
+    color: crimson;
+}
+
+.liens_utiles {
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+
+}

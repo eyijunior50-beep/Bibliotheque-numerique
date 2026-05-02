@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bibliothèque Numérique - Votre savoir à porter de clic</title>
+    <link rel="icon" href="../images/livre-ouvert.png" type="image/x-icon">
+
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="../css/style-catalogue.css" />
+</head>
+
+<body class="catalogue">
+
+    <header>
+        <a href="index.html" id="content_logo">
+            <!-- <img src="image apropos\livre-ouvert.png" alt="Logo Bibliothèque Numérique" id="logo"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="logo">
+                <path d="M12 7v14"></path>
+                <path
+                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                </path>
+            </svg>
+            <h3 id="titre_logo">Bibliothèque Numérique</h3>
+        </a>
+
+        <nav id="content_lien_header">
+            <a href="index.html" class="accueil_item">Accueil</a>
+            <a href="catalogue.html" class="catalogue_item">Catalogue</a>
+            <a href="apropos.html" class="apropos_item">À propos</a>
+            <a href="contacts.html" class="contact_item">Contact</a>
+        </nav>
+    </header>
+
+    <section class="sub_header">
+        <div>
+            <h1>Notre Collection Complète</H1>
+            <p>Découvrez ici notre Catalogue</p>
+        </div>
+    </section>
+
+    <section id="zone_filtre">
+        <input type="search" id="bar_search" placeholder="Recherchez un livre">
+        <div id="cont_select">
+
+            <select name="Categories" id="categories" class="select">
+                <option value="">Toute Categorie</option>
+                <option value="">Roman</option>
+                <option value="">Histoire</option>
+                <option value="">Science</option>
+                <option value="">Jeunesse</option>
+                <option value="">Fiction</option>
+                <option value="">Developement personel</option>
+            </select>
+
+            <select name="Auteurs" id="auteurs" class="select">
+                <option value="">Tous les Auteurs</option>
+                <option value="">J.K. Rowling</option>
+                <option value="">Rick Riordan</option>
+                <option value="">Antoine de Saint-Exupéry</option>
+                <option value="">Paulo Coelho</option>
+                <option value="">Napoleon Hill</option>
+                <option value="">Dale Carnegie</option>
+                <option value="">George R. R. Martin</option>
+                <option value="">Stephen King</option>
+                <option value="">ohn Green</option>
+                <option value="">Marc Levy</option>
+            </select>
+
+            <select name="" class="select">
+                <option>Date de sortie</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+            </select>
+        </div>
+    </section>
+
+    <p class="paragraph">13 Livres trouvés...</p>
+
+    <section id="liste_livre">
+        <!-- Livre 1 -->
+        <div class="item_livre">
+
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre1" class="type_livre">Roman</a></div>
+
+                <a href="livres.html#livre1" class="nom_livre">
+                    <h3>Le Pèlerin de Compostelle</h3>
+                </a>
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/paulo-coelho-pelerin-de-compostelle.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Paulo Coelho <br>1987</p>
+
+                <P class="prix">12,37 DH</P>
+            </div>
+
+        </div>
+
+
+        <div class="item_livre">
+            <!-- Livre 2 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre2" class="type_livre">Roman</a></div>
+
+                <a href="livres.html#livre2" class="nom_livre">
+                    <H3>Nos Etoiles <br>contraires</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/john green nos etoiles contraires.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">John Green <br>2010</p>
+
+                <P class="prix">83,87 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 3 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre3" class="type_livre">Roman</a></div>
+
+                <a href="livres.html#livre3" class="nom_livre">
+                    <h3>Looking For <br>alaska</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/alaska john green.jpeg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">John Green <br>2005</p>
+
+                <P class="prix">106,00 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 4 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre4" class="type_livre">Jeunesse</a></div>
+
+                <a href="livres.html#livre4" class="nom_livre">
+                    <h3>Les Bonnes Manières Pour Les petits Dragon</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/jeunesse.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Caryl Hart <br>2019</p>
+
+                <P class="prix">156,45 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- livre5 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre5" class="type_livre">Developement personel</a>
+                </div>
+
+                <a href="livres.html#livre5" class="nom_livre">
+                    <H3>Comment Se Faire <br> Des Amis</H3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/dale carnegie ce faire des amis.webp" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Dale Carnegie <br>1936</p>
+
+                <P class="prix">92,32 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 6 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre6" class="type_livre">Developement personel</a>
+                </div>
+                <a href="livres.html#livre6" class="nom_livre">
+                    <h3>Le succes Pars <br> La Pensée Constructive</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/napoleon-hill-le succes-pars-la-pensée.jpg" alt=""
+                    class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Napoleon Hill <br>1967</p>
+
+                <P class="prix">102,00 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 7 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre7" class="type_livre">Science</a></div>
+                <a href="livres.html#livre7" class="nom_livre">
+                    <h3>L'alchimiste</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/paulo-coelho-l'alchimiste.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Paulo Coelho<br>1988</p>
+
+                <P class="prix">99,00 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 8 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre8" class="type_livre">Fiction</a></div>
+                <a href="livres.html#livre8" class="nom_livre">
+                    <h3>Games Of Thrones</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/george RR martin.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Stephen king <br>2018</p>
+
+                <P class="prix">223,23 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 9 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre9" class="type_livre">Fiction</a></div>
+                <a href="livres.html#livre9" class="nom_livre">
+                    <h3>Percy jackson</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/percy jackson.jpeg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Rick Riordan <br>2009</p>
+
+                <P class="prix">110,23 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 10 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre10" class="type_livre">Fiction</a></div>
+                <a href="livres.html#livre10" class="nom_livre">
+                    <h3>The Institute</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/stephen king 1.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Stephen King<br>2009</p>
+
+                <P class="prix">108,23 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre"> <!-- Livre 11 -->
+
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre11" class="type_livre">Fiction</a></div>
+                <a href="livres.html#livre11" class="nom_livre">
+                    <h3>La Parts Des Tenèbres</h3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/stephen king 2.webp" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Stephen king <br>2018</p>
+
+                <P class="prix">223,23 DH</P>
+            </div>
+
+        </div>
+
+        <div class="item_livre">
+            <!-- Livre 12 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre12" class="type_livre">Histoire</a></div>
+                <a href="livres.html#livre12" class="nom_livre">
+                    <H3>Histoire Général De L'afrique</H3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/afrique.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">Ki-Zerbo <br>1981</p>
+
+                <P class="prix">223,23 DH</P>
+            </div>
+
+        </div>
+
+
+        <div class="item_livre">
+            <!-- Livre 13 -->
+            <div class="haut_item">
+
+                <div class="cont_type_livre"><a href="livres.html#livre13" class="type_livre">Science</a></div>
+                <a href="livres.html#livre13" class="nom_livre">
+                    <H3>Histoire Du Monde</H3>
+                </a>
+
+            </div>
+
+            <div class="cont_img_livres">
+                <img src="../images/image-catalogue/Histoire-du-monde.jpg" alt="" class="img_livres">
+            </div>
+
+            <div class="bas_item">
+                <p class="info_livre">National Géographic <br>2016</p>
+
+                <P class="prix">250,23 DH</P>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+        <p>&copy; 2025 Bibliothèque Numérique. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+/* BODY GLOBALE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    background-color: hsl(40, 20%, 97%);
+    /* background-color: #f8f4e8ea; */
+    color: hsl(220, 40%, 15%);
+    unicode-bidi: isolate;
+
+}
+
+/* NAV BAR ACTIONS : DEBUT */
+body.accueil header nav a.accueil_item {
+    font-weight: 500;
+    color: #d39926 !important;
+}
+
+body.catalogue header nav a.catalogue_item {
+    font-weight: 500;
+    color: #d39926 !important;
+}
+
+body.apropos header nav a.apropos_item {
+    font-weight: 500;
+    color: #d39926 !important;
+}
+
+body.contact header nav a.contact_item {
+    font-weight: 500;
+    color: #d39926 !important;
+}
+
+/* NAV BAR ACTIONS : FIN */
+
+
+/* HEADER GLOBAL : DEBUT */
+header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 0 32px;
+
+    /* width: 100%; */
+    z-index: 50;
+    top: 0;
+    position: sticky;
+
+    border-bottom-width: 1px;
+    border-color: hsla(220, 20%, 85%, .4);
+    background-color: hsla(40, 20%, 97%, .6);
+
+    backdrop-filter: blur(8px);
+}
+
+#content_logo {
+    /* c'est pour la div qui contient l'ensemble du logo*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+
+    text-decoration: none;
+    
+}
+
+#logo {
+    color: #d39926;
+}
+
+#titre_logo {
+    color: transparent;
+    background: linear-gradient(to right,
+            #00040b 0%,
+            #162549 30%,
+            #59647d 55%,
+            #957d59 70%,
+            #f1c659 85%,
+            #ebb447 100%);
+    background-clip: text;
+}
+
+#content_lien_header {
+    /*pour la div qui contient les lien (contact, apropos...)*/
+    display: flex;
+    justify-content: space-between;
+
+    /*creer un meme espace entre les lien*/
+    gap: 20px;
+}
+
+#content_lien_header a {
+    color: #081021;
+    text-decoration: none;
+}
+
+#content_lien_header a:hover {
+    color: #d39926;
+}
+
+/* HEADER GLOBAL : FIN */
+
+/* SUB-HEADER GLOBAL : DEBUT */
+.sub_header {
+    background-color: #13316c;
+    color: #f7f4ee;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.sub_header div {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;
+    /* width: 100%; */
+    max-width: 1400px;
+}
+
+.sub_header div h1 {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sub_header div p {
+    color: hsla(40, 35%, 95%, .9);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* SUB-HEADER GLOBAL : FIN */
+
+
+/* FOOTER GLOBAL : DEBUT */
+footer {
+    background-color: hsla(40, 20%, 92%, .3);
+    border-top-width: 1px;
+    border-color: hsla(220, 20%, 85%, .4);
+    margin-top: 5rem;
+
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    text-align: center;
+    color: #626d84;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+/* FOOTER GLOBAL : FIN */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}

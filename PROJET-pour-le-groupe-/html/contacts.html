@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bibliothèque Numérique - Votre savoir à porter de clic</title>
+  <link rel="icon" href="../images/livre-ouvert.png" type="image/x-icon">
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- CSS LOCAL -->
+  <link rel="stylesheet" href="../css/style-contact.css" />
+</head>
+
+<body class="contact">
+  <!-- GLOBAL HEADER  -->
+  <header>
+    <a href="index.html" id="content_logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="logo">
+        <path d="M12 7v14"></path>
+        <path
+          d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+        </path>
+      </svg>
+
+      <h3 id="titre_logo">Bibliothèque Numérique</h3>
+    </a>
+
+    <nav id="content_lien_header">
+      <a href="index.html" class="accueil_item">Accueil</a>
+      <a href="catalogue.html" class="catalogue_item">Catalogue</a>
+      <a href="apropos.html" class="apropos_item">À propos</a>
+      <a href="contacts.html" class="contact_item">Contact</a>
+    </nav>
+  </header>
+
+  <!-- GLOBAL SUB-HEADER -->
+  <section class="sub_header">
+    <div>
+      <h1>Contact</h1>
+      <p>Nous sommes à votre écoute</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container_content">
+      <div class="container_form">
+        <h2>Envoyez-nous un message</h2>
+        <form action="mailto:contact@bibliotheque-numerique.ma" method="get">
+          <div>
+            <label for="subject">Objet</label>
+            <input id="subject" name="subject" type="text" required placeholder="L'object de votre message"
+              value="Demande d'information sur la bibliothèque numérique">
+          </div>
+
+          <div>
+            <label for="body">Message</label>
+            <textarea id="body" name="body" required placeholder="Votre message..." rows="6"></textarea>
+          </div>
+
+          <button type="submit">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+
+      <div class="container_info">
+        <div>
+          <h2>Coordonnées</h2>
+          <div>
+            <div class="container_info_items">
+              <h3>Adresse</h3>
+              <p>
+                Universite Mundiapolis NOUACEUR
+                <br>
+                75001 Casablanca, Maroc
+              </p>
+            </div>
+
+            <div class="container_info_items">
+              <h3>Téléphone</h3>
+              <p>
+                +212 0617442321
+              </p>
+            </div>
+
+            <div class="container_info_items">
+              <h3>Email</h3>
+              <p>
+                contact@mundiapolis..ma
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2>Suivez-nous</h2>
+          <div class="container_info_social">
+            <a class="Facebook" href="#">Facebook</a>
+            <a class="Twitter" href="#">Twitter/X</a>
+            <a class="Instagram" href="#">Instagram</a>
+          </div>
+        </div>
+
+        <div class="container_info_horaires">
+          <h3>Horaires d'ouverture</h3>
+          <p>
+            Notre plateforme est accessible 24h/24, 7j/7.
+            <br>
+            Notre équipe répond à vos messages du Lundi au Vendredi, de 9h à 18h.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bibliothèque Numérique. Tous droits réservés.</p>
+  </footer>
+
+</body>
+
+</html>

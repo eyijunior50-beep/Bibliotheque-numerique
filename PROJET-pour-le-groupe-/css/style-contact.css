@@ -1,0 +1,241 @@
+body {
+    /* cursor: none; */
+}
+
+.curseur {
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    pointer-events: none;
+    /* background: url("../Media/5d903aa1cc5fde647e4055b4a46380ed.gif") no-repeat center/contain; */
+}
+
+.container {
+    padding-top: 2rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    max-width: 1400px;
+}
+
+
+@media (min-width: 768px) {
+    .container_content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: grid;
+        gap: 3rem;
+    }
+}
+
+.container_form {
+    animation: fade-in .5s ease-out;
+}
+
+.container_form h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container_form form div {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.container_form form div label {
+    font-weight: 500;
+    line-height: 1;
+    font-size: .875rem;
+    cursor: default;
+}
+
+.container_form form div input {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    background-color: #f9f8f6;
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+
+}
+
+.container_form form div textarea {
+    font-size: .875rem;
+    line-height: 1.25rem;
+
+    padding-top: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    background-color: #f9f8f6;
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    margin-top: .5rem;
+    resize: vertical;
+}
+
+.container_form form button {
+    margin-bottom: 1.5rem;
+
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    color: hsl(40, 35%, 95%);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: hsl(220, 70%, 25%);
+    border-radius: .55rem;
+    white-space: nowrap;
+
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    width: 100%;
+    display: inline-flex;
+}
+
+.container_form form button:hover {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(220, 70%, 25%, .6);
+}
+
+.container_info {
+    animation-delay: .2s;
+    animation: fade-in .5s ease-out;
+}
+
+.container_info_items {
+    padding-left: 1.5rem;
+}
+
+.container_info_items h3 {
+    margin: 0;
+    margin-bottom: .25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(220, 20%, 17%);
+}
+
+.container_info_items p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: hsl(220, 15%, 45%);
+}
+
+.container_info_social {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1.5rem;
+}
+
+.container_info_social a {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    text-decoration: none;
+    color: hsl(220, 15%, 45%);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container_info_social a:hover {
+    /* color: hsl(220, 20%, 17%); */
+    text-decoration: underline;
+    color: transparent;
+    color: transparent;
+    background: linear-gradient(to right,
+            red 0%,
+            pink 30%,
+            #eb3467 55%,
+            #cf3030 70%,
+            #f1c659 85%,
+            #ebb447 100%);
+    background-clip: text;
+}
+
+
+.container_info_horaires {
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+    background-color: hsla(40, 50%, 88%, .5);
+
+    border-color: hsla(220, 20%, 85%, .5);
+    border-width: 1px;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    border-style: solid;
+
+}
+
+.container_info_horaires h3 {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.container_info_horaires p {
+    color: hsl(220, 15%, 45%);
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+/* 
+.Facebook:hover{
+    color: blue;
+}
+.Twitter:hover{
+    color: aqua;
+}
+.Instagram:hover{
+    /* color: transparent; 
+    background: linear-gradient(to right,
+            red 0%,
+            pink 30%,
+            #eb3467 55%,
+            #cf3030 70%,
+            #f1c659 85%,
+            #ebb447 100%);
+    background-clip: text; */
+
+h3{
+
+    color: blue;
+}
